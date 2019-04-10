@@ -36,6 +36,16 @@ a {
   width: 70%;
   color: #a0a0a0;
 }
+.header__info a {
+  color: #a0a0a0;
+}
+.header__phone {
+  width: 27%;
+}
+.header__contacts,
+.header__work {
+  width: 33%;
+}
 .header__logo {
   width: 30%;
 }
@@ -179,7 +189,7 @@ header__item {
   color: #8C8C8C;
   border-bottom: 4px solid #fff;
   text-transform: uppercase;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .header__item .header__link:hover {
   color: #0038A0;
@@ -237,12 +247,12 @@ header__item {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .content__list {
-  color: #0038a0;
   margin-bottom: 3rem;
   text-align: center;
+  width: 22.4rem;
 }
 .content__list img {
   border-top: 2px solid #0038a0;
@@ -260,11 +270,26 @@ header__item {
 .content__list p {
   font-size: 2.4rem;
   font-family: 'Roboto Condensed', sans-serif;
+  color: #0038a0;
+  transition: 0.5s;
+}
+.content__list a {
+  transition: 0.5s;
+}
+.content__list a:hover {
+  filter: drop-shadow(0px 0px 5px #000000);
+}
+.content__list a:hover p {
+  color: #740000;
+  filter: drop-shadow(0px 0px 5px #740000);
 }
 .content__text {
   font-size: 2rem;
   color: #8C8C8C;
   padding-bottom: 2.5rem;
+}
+.content__text ul {
+  padding-left: 4rem;
 }
 .form {
   margin-bottom: 1.5rem;
@@ -470,6 +495,9 @@ header__item {
   display: flex;
   justify-content: space-between;
 }
+.footer__info a {
+  color: #740000;
+}
 .footer__text {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -479,6 +507,13 @@ header__item {
 }
 .header__burger {
   display: none;
+}
+.footer__phone {
+  width: 27%;
+}
+.footer__contacts,
+.footer__work {
+  width: 33%;
 }
 @media (max-width: 1192px) {
   html,
@@ -499,6 +534,7 @@ header__item {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
   }
   .content__list {
     width: 80%;
