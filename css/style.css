@@ -674,6 +674,12 @@ input:focus {
 .feedback__close:hover {
   filter: drop-shadow(0px 0px 6px #0038a0);
 }
+.calk__calc {
+  display: none;
+}
+.calk__calc--active {
+  display: block;
+}
 @media (max-width: 1192px) {
   html,
   body {

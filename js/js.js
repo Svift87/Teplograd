@@ -33,11 +33,23 @@ let popap = document.querySelector('.feedback'),
 	close = document.querySelector('.feedback__close'),
 	feedbackSubmit = document.querySelector('.feedback__submit');
 
+let calkCalcOne = document.querySelector('.calk__calc--one'),
+	calkCalcTwo = document.querySelector('.calk__calc--two');
 
+let calc = document.querySelector('.calc');
 
-calcBtnCall.addEventListener('click', function() {
-	appData.selectValue = calcSelect.value;
-	
+//selectOne.addEventListener('click', function(){
+//	calkCalcOne.classList.add('calk__calc--active');
+//});
+
+//calc.addEventListener('mouseover', function(){
+//	appData.selectValue = calcSelect.value;
+//	if (appData.selectValue == "Пенополистирол самозатухающий") {
+//		calkCalcOne.classList.add('calk__calc--active');
+//	}
+//});
+
+calcBtnCall.addEventListener('click', function() {	
 	selectValuePopap.innerHTML = appData.selectValue;
 	volumeValue.innerHTML = appData.volume;
 	
