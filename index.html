@@ -230,43 +230,44 @@
 					</h2>
 					<div class="calc__option-block">
 						<p class="calc__name-option">
-							Наименование опции
+							Наименование товара
 						</p>
 						<div class="calc__container-select">
-							<select name="theme-1" id="calc__select-1" class="calc__select">
+							<select name="theme-1" id="calc__select" class="calc__select">
 								<option class="calc__option">
 									Выплывающий список
 								</option>
-								<option value="что-то" class="calc__option">
-									что-то
+								<option id="one" value="Пенополистирол самозатухающий" class="calc__option">
+									Пенополистирол самозатухающий 
 								</option>
-								<option value="что-то" class="calc__option">
-									что-то
+								<option id="two" value="Вспененная гранула" class="calc__option">
+									Вспененная гранула
 								</option>
-								<option value="что-то" class="calc__option">
-									что-то
+								<option id="three" value="Бруски из пенополистирола" class="calc__option">
+									Бруски из пенополистирола
 								</option>
-							</select>
-						</div>
-						<p class="calc__name-option">
-							Наименование опции
-						</p>
-						<div class="calc__container-select">
-							<select name="theme-2" id="calc__select-2" class="calc__select">
-								<option class="calc__option">
-									Выплывающий список
-								</option>
-								<option value="что-то" class="calc__option">
-									что-то
-								</option>
-								<option value="что-то" class="calc__option">
-									что-то
-								</option>
-								<option value="что-то" class="calc__option">
-									что-то
+								<option id="four" value="Дробленый пенополистирол" class="calc__option">
+									Дробленый пенополистирол
 								</option>
 							</select>
+						</div>			
+						<div class="calc__main">
+							<div class="calc__data">
+								<p>Длинна</p>
+								<input type="text" class="calc__length">
+								<p>Ширина</p>
+								<input type="text" class="calc__width">
+								<p>Толщина</p>
+								<input type="text" class="calc__thickness">
+							</div>
+							<div class="calc__result">
+								<p>Объем</p>
+								<input type="text" class="calc__volume" readonly>								
+							</div>
 						</div>
+						<button class="calc__btn-call">
+							Заказать звонок
+						</button>									
 					</div>
 				</div>
 				<div class="calc__right">
@@ -399,6 +400,26 @@
 			</div>
 		</div>
 	</footer>
+	
+	<section class="modal feedback">
+		<form class="feedback__form" action="" method="post">
+			<h3 class="feedback__header">
+				Отправьте заявку на расчет стоимости
+			</h3>
+			<p class="feedback__text">
+				Мы расчитаем для вас 
+				<span class="select__value-popap"></span>
+				объемом
+				<span class="volume__value"></span> 
+				м<sup>3</sup>					
+			</p>
+			<input type="name" class="feedback__name" placeholder="Имя">
+			<input type="tel" class="feedback__name" placeholder="+7(___)___-__-__">
+			<input type="email" class="feedback__name" placeholder="Email">
+			<input type="submit" class="feedback__submit" value="Заказать консультацию">
+			<div class="feedback__close"></div>
+		</form>
+	</section>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
