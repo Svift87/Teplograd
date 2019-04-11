@@ -524,6 +524,12 @@ header__item {
 .footer__work {
   width: 33%;
 }
+.carousel-control-next-icon {
+  background-image: url(../img/chevron-right.png);
+}
+.carousel-control-prev-icon {
+  background-image: url(../img/chevron-left.png);
+}
 @media (max-width: 1192px) {
   html,
   body {
