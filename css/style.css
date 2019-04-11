@@ -9,9 +9,16 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h3 {
+  font-size: 3.6rem;
 }
 .header {
   margin-top: 3.2rem;
@@ -442,6 +449,8 @@ header__item {
   border-radius: 6px;
   background-color: #0038A0;
   padding: 6px;
+  display: flex;
+  align-items: center;
 }
 .calc__image img {
   width: 100%;
@@ -522,6 +531,9 @@ header__item {
   }
 }
 @media (max-width: 700px) {
+  h3 {
+    font-size: 18px;
+  }
   .content__list:first-child img,
   .content__list:last-child img {
     border-top-left-radius: 0;
@@ -675,7 +687,6 @@ header__item {
     margin-bottom: 2rem;
   }
   .calc__image {
-    height: 100%;
     width: 47%;
   }
   .form__header {
