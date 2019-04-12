@@ -241,7 +241,7 @@
 								</option>
 							</select>
 						</div>	
-						<div class="calk__calc calk__calc--one calk__calc--active">	
+						<div class="calk__calc calk__calc--one">	
 							<div class="calc__main">
 								<div class="calc__data">
 									<p>Длинна (м)</p>
@@ -256,11 +256,11 @@
 									<input type="text" class="calc__volume" readonly>								
 								</div>
 							</div>
-							<button class="calc__btn-call">
+							<button class="calc__btn-call calc__btn-call--volume">
 								Узнать стоимость
 							</button>
 						</div>		
-<!--
+
 						<div class="calk__calc calk__calc--two">	
 							<div class="calc__main">
 								<div class="calc__data">
@@ -268,11 +268,10 @@
 									<input type="text" class="calc__weight">
 								</div>
 							</div>
-							<button class="calc__btn-call">
-								Заказать звонок
+							<button class="calc__btn-call calc__btn-call--weight">
+								Узнать стоимость
 							</button>
-						</div>							
--->
+						</div>
 					</div>
 				</div>
 				<div class="calc__right">
@@ -414,9 +413,7 @@
 			<p class="feedback__text">
 				Мы расчитаем для вас 
 				<span class="select__value-popap"></span>
-				объемом
-				<span class="volume__value"></span> 
-				м<sup>3</sup>					
+				<span class="volume__value"></span>
 			</p>
 			<input type="name" class="feedback__name" placeholder="Имя">
 			<input type="tel" class="feedback__name" placeholder="+7(___)___-__-__">
