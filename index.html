@@ -201,7 +201,7 @@
 				</p>
 				<form action="#" class="form__data">
 					<input class="form__mail form--input" type="email" placeholder="E-Mail">
-					<p class="form__сonnection">
+					<p class="form__connection">
 						или
 					</p>
 					<input type="phone" class="form__phone form--input" placeholder="+7(___)___-__-__">
@@ -225,7 +225,7 @@
 						<div class="calc__container-select">
 							<select name="theme-1" id="calc__select" class="calc__select">
 								<option class="calc__option">
-									Выплывающий список
+									Укажите товар
 								</option>
 								<option id="one" value="Пенополистирол самозатухающий" class="calc__option">
 									Пенополистирол самозатухающий 
@@ -253,14 +253,14 @@
 								</div>
 								<div class="calc__result">
 									<p>Объем (м<sup>3</sup>)</p>
-									<input type="text" class="calc__volume" readonly>								
+									<input type="text" class="calc__volume" readonly="">								
 								</div>
 							</div>
-							<button class="calc__btn-call">
+							<button class="calc__btn-call calc__btn-call--volume" data-toggle="modal" data-target="#myModal">
 								Узнать стоимость
 							</button>
 						</div>		
-<!--
+
 						<div class="calk__calc calk__calc--two">	
 							<div class="calc__main">
 								<div class="calc__data">
@@ -268,11 +268,10 @@
 									<input type="text" class="calc__weight">
 								</div>
 							</div>
-							<button class="calc__btn-call">
-								Заказать звонок
+							<button class="calc__btn-call calc__btn-call--weight" data-toggle="modal" data-target="#myModal">
+								Узнать стоимость
 							</button>
-						</div>							
--->
+						</div>
 					</div>
 				</div>
 				<div class="calc__right">
